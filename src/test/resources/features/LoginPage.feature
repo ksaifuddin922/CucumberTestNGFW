@@ -1,9 +1,8 @@
-#Author: your.email@your.domain.com
 Feature: Login to HRM Application
 
   @ValidCredentials
   Scenario: Login with valid credentials
-    Given User is on HRMLogin page "https://opensource-demo.orangehrmlive.com/"
+    Given User is on HRMLogin page "https://www.facebook.com/"
     When User enters username as "Admin" and password as "admin123"
     Then User should be able to login sucessfully and new page open
 
