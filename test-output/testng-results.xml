@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-16T12:52:21 IST" name="Default suite" finished-at="2023-03-16T12:52:23 IST" duration-ms="1966">
+  <suite started-at="2023-03-16T22:04:51 IST" name="Suite" finished-at="2023-03-16T22:04:54 IST" duration-ms="2960">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestsRunner@7161d8d1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestsRunner@1cf6d1be]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-03-16T12:52:21 IST" name="Default test" finished-at="2023-03-16T12:52:23 IST" duration-ms="1966">
+    <test started-at="2023-03-16T22:04:51 IST" name="Test" finished-at="2023-03-16T22:04:54 IST" duration-ms="2960">
       <class name="runner.TestsRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestsRunner@7161d8d1]" started-at="2023-03-16T12:52:21 IST" name="setUpClass" finished-at="2023-03-16T12:52:21 IST" duration-ms="154" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestsRunner@1cf6d1be]" started-at="2023-03-16T22:04:51 IST" name="setUpClass" finished-at="2023-03-16T22:04:51 IST" duration-ms="197" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@77dba4cd]]>
+                <![CDATA[org.testng.TestRunner@3e36b7a0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestsRunner@7161d8d1]" started-at="2023-03-16T12:52:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-16T12:52:23 IST" duration-ms="1770" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestsRunner@1cf6d1be]" started-at="2023-03-16T22:04:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-16T22:04:54 IST" duration-ms="2710" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,39 +34,25 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+          <exception class="io.cucumber.java.PendingException">
             <message>
-              <![CDATA[Unable to establish websocket connection to http://localhost:56964/devtools/browser/9b4dea23-d658-4810-9eeb-612313d60421
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DELL', ip: '192.168.0.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: ChromeDriver]]>
+              <![CDATA[TODO: implement me]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:56964/devtools/browser/9b4dea23-d658-4810-9eeb-612313d60421
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DELL', ip: '192.168.0.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
-at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
-at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
-at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-at java.base/java.util.Optional.map(Optional.java:260)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-at Stepdefs.LoginPageSteps.setup(LoginPageSteps.java:19)
+              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
+at Stepdefs.LoginPageSteps.user_is_on_hrm_login_page(LoginPageSteps.java:33)
+at ✽.User is on HRMLogin page "https://www.facebook.com/"(file:///D:/AutomationCodeBase/CucumberRepo/CucumberTestNGFW/src/test/resources/features/LoginPage.feature:5)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          </exception> <!-- io.cucumber.java.PendingException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestsRunner@7161d8d1]" started-at="2023-03-16T12:52:23 IST" name="tearDownClass" finished-at="2023-03-16T12:52:23 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestsRunner@1cf6d1be]" started-at="2023-03-16T22:04:54 IST" name="tearDownClass" finished-at="2023-03-16T22:04:54 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runner.TestsRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
